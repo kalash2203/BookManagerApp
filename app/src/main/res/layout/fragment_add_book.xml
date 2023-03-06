@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="10dp"
+        android:padding="16dp"
+        tools:context=".ui.fragment.AddBooksFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:padding="15dp"
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:hint="Your Name"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <EditText
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:hint="Your Number"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+          <androidx.appcompat.widget.AppCompatSpinner
+              android:layout_marginTop="20dp"
+              android:id="@+id/select_books"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_add_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/teal_200"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Add Book"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
